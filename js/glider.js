@@ -1,3 +1,4 @@
+// Carrusel generado por la libreria Glider
 window.addEventListener('load', function(){
 	new Glider(document.querySelector('.carrusel-items'), {
 		slidesToShow: 1,

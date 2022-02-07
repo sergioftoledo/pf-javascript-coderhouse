@@ -69,6 +69,7 @@ function renderShoppingCart(array, etiqueta) {
             </div>
         </div>`);
 
+        /* Captura el evento click en el boton 'Eliminar producto' y luego elimina el producto seleccionado, ademas de actualizar la cantidad y el precio total del carrito */
         $(`#btnEliminate${product.id}`).on('click', e => {
             e.preventDefault();
             eliminateProductInLocalStorage(product.id);
@@ -76,7 +77,7 @@ function renderShoppingCart(array, etiqueta) {
             totalPrice(getStorage());
             productsShowInCartIcon(getStorage())
         });
-
+        // Efecto hover
         $(`#btnEliminate${product.id}`).on('mouseover', () => {
             $(`#btnEliminate${product.id}`).css({'color': '#C9002B',
             'transition': '0.3s'})
@@ -86,7 +87,7 @@ function renderShoppingCart(array, etiqueta) {
             $(`#btnEliminate${product.id}`).css('color', '#fff')
         })
         
-        
+        // Captura el evento click en el boton '-' y luego elimina un producto hasta que quede un producto
         $(`#btnDecrease${product.id}`).on('click', () => {
             if (product.quantity > 1) {
                 product.quantity--
@@ -98,6 +99,7 @@ function renderShoppingCart(array, etiqueta) {
             }
         })
 
+        // Efecto hover
         $(`#btnDecrease${product.id}`).on('mouseover', () => {
             $(`#btnDecrease${product.id}`).css({'color': '#C9002B',
             'transition': '0.3s'})
@@ -107,6 +109,7 @@ function renderShoppingCart(array, etiqueta) {
             $(`#btnDecrease${product.id}`).css('color', '#004b93')
         })
         
+        // Captura el evento click en el boton '+' y luego suma el producto al carrito.
         $(`#btnIncrease${product.id}`).on('click', () => {
                 product.quantity++
                 setStorage(array);
@@ -116,6 +119,7 @@ function renderShoppingCart(array, etiqueta) {
                 productsShowInCartIcon(getStorage())
         });
 
+        // Efecto hover
         $(`#btnIncrease${product.id}`).on('mouseover', () => {
             $(`#btnIncrease${product.id}`).css({'color': '#29bf12',
             'transition': '0.3s'})
@@ -219,8 +223,7 @@ function clearCart() {
 clearCart();
 
 
-//! PRUEBA
-
+//  Funcion que elimina el producto selecconado del carrito
 function eliminateProductInLocalStorage(id) {
     const containerCart = $('#cart-body')
      let productsLocalStorage = JSON.parse(localStorage.getItem('Cart'));
@@ -228,5 +231,3 @@ function eliminateProductInLocalStorage(id) {
      setStorage(productsLocalStorageFilter);
      renderShoppingCart(productsLocalStorageFilter, containerCart)
 }
-
-//! PRUEBA

@@ -686,7 +686,7 @@ $sombreado-logo-header-scroll: drop-shadow(0 0 0.3rem $color-rojo-pepsi);
 
 /* Formulario de compra */
 #first-section-form {
-    background: linear-gradient(rgba(49, 54, 53, 0.4), rgba(34, 34, 71, 0.6)), url(/src/images/fondo-formulario.webp);
+    background: linear-gradient(rgba(49, 54, 53, 0.4), rgba(34, 34, 71, 0.6)), url(./../src/images/fondo-formulario.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -735,7 +735,6 @@ $sombreado-logo-header-scroll: drop-shadow(0 0 0.3rem $color-rojo-pepsi);
         p {
             flex-direction: column;
             margin-bottom: 15px;
-            // filter: drop-shadow(0 0 0.2rem $color-rojo-pepsi);
 
             h2, h3 {
                 font-size: 1.5rem;
@@ -762,7 +761,7 @@ $sombreado-logo-header-scroll: drop-shadow(0 0 0.3rem $color-rojo-pepsi);
     justify-content: center;
     z-index: 3;
 }
-.efectoIcon {
+.logo-efect {
     animation: rotate 0.6s infinite linear;
   }
 

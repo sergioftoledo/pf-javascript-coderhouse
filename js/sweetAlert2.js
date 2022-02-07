@@ -1,10 +1,4 @@
-// /* Variables */
-// $color-blanco: #fff;
-// $color-negro: #000;
-// $color-azul-pepsi: #004b93;
-// $color-azul2-pepsi: #005cb4;
-// $color-rojo-pepsi: #c9002b;
-// $sombreado-logo-footer: drop-shadow(0 0 0.5rem $color-rojo-pepsi);
+// captura de selectores.
 
 const alertAddProductToCart = document.getElementsByClassName('add-product-cart');
 const alertDeleteCart = document.getElementsByClassName('reset-cart');

@@ -1,7 +1,7 @@
+// Captura de selectores/
 const closeDrink = $('.close-drink');
 const modalDrink = $('.modal-drink');
 const modalContainerDrink = $('.modal-container-drink');
-
 const closeFood = $('.close-food');
 const modalFood = $('.modal-food');
 const modalContainerFood = $('.modal-container-food');

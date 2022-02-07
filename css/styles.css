@@ -757,7 +757,7 @@ header .hvr-underline-from-left:hover:before, header .hvr-underline-from-left:fo
 
 /* Formulario de compra */
 #first-section-form {
-  background: linear-gradient(rgba(49, 54, 53, 0.4), rgba(34, 34, 71, 0.6)), url(/src/images/fondo-formulario.webp);
+  background: linear-gradient(rgba(49, 54, 53, 0.4), rgba(34, 34, 71, 0.6)), url(./../src/images/fondo-formulario.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -824,7 +824,7 @@ header .hvr-underline-from-left:hover:before, header .hvr-underline-from-left:fo
   z-index: 3;
 }
 
-.efectoIcon {
+.logo-efect {
   animation: rotate 0.6s infinite linear;
 }
 
