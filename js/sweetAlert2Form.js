@@ -1,3 +1,7 @@
+window.onload = () => {
+    clearLocalStorageForm ()
+}
+
 const alertBuyProducts = document.querySelector('.buy');
 const firstName = document.getElementById('name');
 const lastName = document.getElementById('last-name');
@@ -24,6 +28,7 @@ firstName.value.toUpperCase()
             street.value = '';
             floor.value = '';
             flat.value = '';
+            clearLocalStorageForm ()
             
         } else {
             Swal.fire({
@@ -32,6 +37,12 @@ firstName.value.toUpperCase()
             });
         };
     });
+
+    // Limpia el localStorage luego de finalizar correctamente la compra.
+    function clearLocalStorageForm () {
+        localStorage.clear()
+        productsShowInCartIcon(getStorage())
+    }
 
 
 
