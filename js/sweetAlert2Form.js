@@ -25,7 +25,7 @@ window.onload = () => {
             street.value = '';
             floor.value = '';
             flat.value = '';
-            getStorage.clear();
+            getStorage().clear();
             
         } else {
             Swal.fire({
