@@ -35,7 +35,7 @@ const pepsiMango = new Products (4, 'bebidas','Pepsi Mango', 'Un chorrito de del
 
 const pepsiMangoCeroSugar = new Products (5, 'bebidas', 'Pepsi Mango Cero Sugar', 'Eabor a mango agrega una dimensión audaz y refrescante a Pepsi Zero Sugar.', 'Agua carbonatada, color caramelo, ácido fosfórico, aspartamo, sabor natural, cafeína, sorbato de potasio.', 300, 35, './src/images/drinks/pepsi-zero-sugar-mango.png', 'color-fondo5');
 
-const pepsiWildCherry = new Products (6, 'bebidas', 'Pepsi Wild Cherry', '¡Solo Wild Cherry Pepsi tiene la excitante explosión del sabor de cereza único y un sabor dulce y crujiente!', 'Agua carbonatada, jarabe de maíz con alto contenido de fructosa, color caramelo, azucar, ácido fosfórico.', 275, 35, './src/images/drinks/pepsi-Cherry.png', 'color-fondo6');
+const pepsiWildCherry = new Products (6, 'bebidas', 'Pepsi Wild Cherry', '¡Solo Wild Cherry Pepsi tiene la excitante explosión del sabor de cereza único y un sabor dulce y crujiente!', 'Agua carbonatada, jarabe de maíz con alto contenido de fructosa, color caramelo, azucar, ácido fosfórico.', 275, 35, './src/images/drinks/pepsi-cherry.png', 'color-fondo6');
 
 const pepsiDietWildCherry = new Products (7, 'bebidas', 'Diet Pepsi Wild Cherry', '¡Solo Wild Cherry Pepsi tiene la excitante explosión del sabor de cereza único y un sabor dulce y crujiente!', 'Agua carbonatada, color caramelo, ácido fosfórico, sabor natural, benzoato de potasio.', 300, 40, './src/images/drinks/Diet-Pepsi-Cherry.png', 'color-fondo7');
 
