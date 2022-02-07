@@ -9,7 +9,6 @@ const flat = document.getElementById('flat');
 
 firstName.value.toUpperCase()
 
-window.onload = () => {
 //* Alerta al cliente que su compra fue realizada con éxito o si falta campos por rellenar.
     alertBuyProducts.addEventListener('click', e => {
         e.preventDefault();
@@ -25,7 +24,6 @@ window.onload = () => {
             street.value = '';
             floor.value = '';
             flat.value = '';
-            getStorage().clear();
             
         } else {
             Swal.fire({
@@ -34,7 +32,6 @@ window.onload = () => {
             });
         };
     });
-  };
 
 
 
