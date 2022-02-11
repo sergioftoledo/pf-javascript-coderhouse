@@ -175,6 +175,7 @@ function showCart() {
         renderShoppingCart(cart, containerCart);
         totalPrice(cart);
         totalProducts(cart);
+        cartEmpty()
     });
 };
 
@@ -207,6 +208,7 @@ productsShowInCartIcon(getStorage());
 // ELimina los productos del localStorage y del carrito.
 function clearLocalStorage() {
     localStorage.clear();
+    cartEmpty()
 }
 
 /* Al hacer click sobre el boton "ELIMINAR CARRITO" resetea los productos que hay en el localStorage, limpia el carrito de compras, vuelve a 0 la cantidad y el precio total, ademas de volver a 0 lo que se muestra en el icono del carrito.*/
@@ -217,6 +219,7 @@ function clearCart() {
     $('.total-price').html(0);
     $('.cart-quantity').html(0);
     $('.total-products').html(0);
+    cartEmpty()
     });
 };
 
@@ -229,5 +232,18 @@ function eliminateProductInLocalStorage(id) {
      let productsLocalStorage = JSON.parse(localStorage.getItem('Cart'));
      let productsLocalStorageFilter = productsLocalStorage.filter(product => product.id != id);
      setStorage(productsLocalStorageFilter);
-     renderShoppingCart(productsLocalStorageFilter, containerCart)
+     renderShoppingCart(productsLocalStorageFilter, containerCart);
+     cartEmpty()
+}
+
+// Indica que el carrito está vacío cuando este no posee productos agregados.
+function cartEmpty() {
+    let containerCart= $("#cart-body");
+    let cart = getStorage();
+    if (cart == '') {
+        containerCart.html(`
+        <div class="empty-cart">
+            <h4> ¡carrito vacio!</h4>
+        </div>`)
+    }
 }

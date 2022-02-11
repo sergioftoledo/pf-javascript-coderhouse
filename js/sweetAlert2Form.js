@@ -28,7 +28,8 @@ firstName.value.toUpperCase()
             street.value = '';
             floor.value = '';
             flat.value = '';
-            clearLocalStorageForm ()
+            clearLocalStorageForm ();
+            cartEmpty()
             
         } else {
             Swal.fire({

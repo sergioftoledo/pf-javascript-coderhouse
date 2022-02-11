@@ -663,6 +663,14 @@ header .hvr-underline-from-left:hover:before, header .hvr-underline-from-left:fo
   font-weight: 900;
   font-style: italic;
 }
+.offcanvas .offcanvas-body .empty-cart {
+  display: flex;
+  justify-content: center;
+  margin: 220px 0;
+}
+.offcanvas .offcanvas-body .empty-cart h4 {
+  color: #C9002B;
+}
 .offcanvas .offcanvas-body .product-push {
   display: flex;
   justify-content: space-around;
