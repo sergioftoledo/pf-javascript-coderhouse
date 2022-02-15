@@ -60,7 +60,7 @@ const ruffles = new Products (16, 'food', 'ruffles', 'Son las onduladas por exce
 
 const quakerCruesli = new Products (17, 'food', 'quaker cruesli', 'Para empezar el día con energía y disfrutando del desayuno. Todos sus products contienen avena 100% integral siendo fuente de fibra, vitaminas y minerales.', '100% copos de avena integral.', 200, 36, './src/images/foods/quaker.png', 'color-fondo-comida6');
 
-const matutano = new Products (18, 'food', 'matutano', 'Es una de las marcas más emblemáticas de nuestro país y ya cuenta con más de 40 años de historia.', 'aceites vegetales, sustancias aromatizantes, potenciadores del sabor.', 250, 70, './src/images/foods/ilforno.png', 'color-fondo-comida7.');
+const matutano = new Products (18, 'food', 'matutano', 'Es una de las marcas más emblemáticas de nuestro país y ya cuenta con más de 40 años de historia.', 'aceites vegetales, sustancias aromatizantes, potenciadores del sabor.', 250, 70, './src/images/foods/ilforno.png', 'color-fondo-comida7');
 
 const santaAna = new Products (19, 'food', 'santa ana', 'Churrería Santa Ana es nuestra marca más tradicional y de origen local. Sus patatas fritas están elaboradas con ingredientes sencillos de gran calidad.', 'Patatas, aceites vegetales , sal.', 1800, 21, './src/images/foods/santaana.png', 'color-fondo-comida8');
 
